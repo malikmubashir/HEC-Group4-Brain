@@ -1,6 +1,6 @@
 # Conditions générales de vente et d’utilisation — Super Majordome IA
 
-**Version :** projet 1.1  
+**Version :** projet 1.2  
 **Date d’export :** 27 octobre 2026  
 **Statut :** production d’assistant à la demande du responsable juridique ; projet non signé, à compléter et valider avant publication. Ce dépôt ne vaut ni adoption des conditions par l’entreprise ni acceptation par des clients.
 
@@ -10,7 +10,7 @@ Ce projet reprend les CGV/CGU rédigées dans la conversation. Il retient une so
 
 Le DPO est l’interlocuteur pour les données personnelles et contrôle la conformité ; les réclamations commerciales relèvent du service client. La Société demeure responsable de ses obligations.
 
-Les mentions entre crochets, l’encadré légal de garantie et les engagements techniques doivent être complétés et vérifiés avant utilisation. Une politique de protection des données distincte est indispensable.
+Les coordonnées pédagogiques, l’encadré légal de garantie et les engagements techniques doivent être remplacés ou vérifiés avant utilisation. Une politique de protection des données distincte est indispensable.
 
 ## Article 1 — Identité du prestataire
 
@@ -26,11 +26,11 @@ Le service « Super Majordome IA » est présenté, pour cette simulation, comme
 - Numéro SIREN fictif et non valable : **123 456 789**.
 - Mention d’immatriculation fictive : **RCS Paris 123 456 789**.
 - Représentant légal : **Malik Mubashir, président envisagé**, sous réserve de sa nomination effective.
-- Numéro de TVA intracommunautaire : [à compléter après attribution réelle].
-- Adresse électronique : [contact opérationnel à compléter].
-- Téléphone : [numéro opérationnel à compléter].
-- Service client : [coordonnées opérationnelles à compléter].
-- Délégué à la protection des données : [adresse électronique et adresse postale effectives à compléter].
+- Numéro de TVA intracommunautaire : FR XX 123456789 — référence pédagogique non valable, aucun numéro attribué établi.
+- Adresse électronique : contact@supermajordome.example — adresse pédagogique non opérationnelle.
+- Téléphone : 01 99 00 12 34 — numéro fictif de démonstration, non destiné à être appelé.
+- Service client : assistance@supermajordome.example ; 12, rue du Majordome Numérique, 75002 Paris — coordonnées fictives.
+- Délégué à la protection des données : dpo@supermajordome.example ; DPO, 12, rue du Majordome Numérique, 75002 Paris — coordonnées fictives ; aucun DPO nommé n’est établi.
 
 Le SIREN de simulation comporte neuf chiffres mais sa clé de contrôle est invalide. La mention RCS reprend ce même numéro fictif. Ces éléments ne doivent pas être utilisés sur des contrats clients, factures ou formalités réelles.
 
@@ -42,7 +42,7 @@ Les présentes conditions régissent la souscription et l’utilisation du servi
 
 Le contrat comprend les présentes conditions, le récapitulatif de commande et la description de l’offre souscrite. Les conditions particulières expressément acceptées prévalent en cas de contradiction sur le même objet.
 
-La politique de protection des données, accessible à [lien], explique les traitements réalisés. Sa mise à disposition ne vaut pas consentement à des traitements facultatifs.
+La politique de protection des données, accessible à https://supermajordome.example/confidentialite (URL pédagogique non opérationnelle), explique les traitements réalisés. Sa mise à disposition ne vaut pas consentement à des traitements facultatifs.
 
 ## Article 3 — Description du service
 
@@ -67,7 +67,7 @@ Le service n’est pas un service d’urgence et ne remplace pas un professionne
 
 La souscription et la création d’un compte sont réservées aux personnes majeures disposant de la capacité de contracter.
 
-Le Client fournit des informations exactes, les maintient à jour et protège ses moyens d’authentification. Il signale sans délai toute utilisation suspecte à [contact sécurité].
+Le Client fournit des informations exactes, les maintient à jour et protège ses moyens d’authentification. Il signale sans délai toute utilisation suspecte à securite@supermajordome.example (adresse pédagogique).
 
 Les accès sont personnels. Chaque utilisateur adulte de l’offre Family dispose de son propre accès.
 
@@ -87,7 +87,7 @@ La confirmation du contrat, les conditions acceptées et le formulaire de rétra
 
 Le prix applicable est celui présenté avant la validation de la commande et repris dans sa confirmation.
 
-[Tarifs à confirmer avant commercialisation : Personal 29 €, Premium 79 €, Family 129 € TTC par mois.]
+**Tarifs de travail issus du Business Model Canvas V2, rubrique « Modèle de revenus proposé » : Personal 29 €, Premium 79 €, Family 129 € TTC par mois. Ces tarifs ne sont pas des prix adoptés ; ils doivent être validés avant commercialisation.**
 
 L’abonnement est facturé mensuellement d’avance, à la date précisée dans la confirmation. Les moyens de paiement acceptés sont indiqués lors de la commande.
 
@@ -101,7 +101,7 @@ Une modification du prix de l’abonnement est notifiée au moins trente jours a
 
 Le contrat est conclu pour une durée indéterminée, avec facturation mensuelle et sans durée minimale d’engagement.
 
-Le Client peut résilier à tout moment, sans frais, au moyen de la fonctionnalité « Résilier votre contrat » accessible depuis [emplacement]. La Société confirme la réception et la date d’effet de la résiliation sur un support durable.
+Le Client peut résilier à tout moment, sans frais, au moyen de la fonctionnalité « Résilier votre contrat » accessible depuis « Mon compte → Abonnement → Résilier votre contrat » (parcours pédagogique à implémenter et vérifier). La Société confirme la réception et la date d’effet de la résiliation sur un support durable.
 
 La résiliation prend effet à la fin de la période mensuelle déjà payée. Le service reste disponible jusqu’à cette date, sauf demande contraire du Client ou motif de suspension justifié.
 
@@ -111,7 +111,7 @@ Les droits de rétractation, de résolution pour défaut de conformité et les a
 
 Le Client dispose de quatorze jours à compter de la conclusion du contrat pour se rétracter, sans avoir à motiver sa décision.
 
-Il peut utiliser le formulaire annexé ou adresser une déclaration dénuée d’ambiguïté à [adresse électronique ou postale]. Un accusé de réception est transmis lorsqu’il utilise le dispositif électronique proposé.
+Il peut utiliser le formulaire annexé ou adresser une déclaration dénuée d’ambiguïté à retractation@supermajordome.example ou Super Majordome IA, 12, rue du Majordome Numérique, 75002 Paris (coordonnées pédagogiques). Un accusé de réception est transmis lorsqu’il utilise le dispositif électronique proposé.
 
 Le remboursement intervient dans les quatorze jours suivant l’information de la Société, avec le même moyen de paiement, sauf accord exprès sur un autre moyen sans frais.
 
@@ -123,7 +123,7 @@ L’activation immédiate de l’abonnement ne supprime pas, à elle seule, le d
 
 Les connexions sont activées à l’initiative du Client au moyen des dispositifs d’autorisation proposés.
 
-Les permissions demandées sont présentées avant connexion. Le Client peut les consulter et les révoquer depuis [interface], sans préjudice des réglages propres au fournisseur tiers.
+Les permissions demandées sont présentées avant connexion. Le Client peut les consulter et les révoquer depuis « Mon compte → Confidentialité → Mémoire et connexions » (interface pédagogique à implémenter et vérifier), sans préjudice des réglages propres au fournisseur tiers.
 
 La connexion technique ne constitue ni une autorisation générale d’exécuter toutes les actions possibles, ni un consentement à toute réutilisation des données.
 
@@ -157,7 +157,7 @@ La Société reste responsable de ses propres obligations et erreurs. Les prése
 
 Les réponses, déductions et propositions de l’IA peuvent comporter des erreurs. Les informations déterminantes pour une décision sensible sont présentées au Client pour vérification selon le niveau de risque.
 
-Le Client peut signaler une erreur et demander sa correction à [contact ou interface].
+Le Client peut signaler une erreur et demander sa correction à assistance@supermajordome.example ou « Aide → Signaler une erreur » (dispositifs pédagogiques).
 
 Ces limites de fonctionnement n’excluent ni les engagements contractuels de la Société ni les garanties légales.
 
@@ -183,11 +183,11 @@ La politique de protection des données précise, pour chaque finalité, les cat
 
 Les traitements nécessaires au service sont distingués des traitements facultatifs. Le refus d’un traitement facultatif n’empêche pas l’accès aux fonctions qui n’en dépendent pas.
 
-Le DPO peut être contacté à [coordonnées] pour toute question ou réclamation concernant les données personnelles. Il exerce ses missions en toute indépendance. La Société demeure responsable de la conformité.
+Le DPO peut être contacté à dpo@supermajordome.example ou DPO, 12, rue du Majordome Numérique, 75002 Paris (coordonnées pédagogiques) pour toute question ou réclamation concernant les données personnelles. Il exerce ses missions en toute indépendance. La Société demeure responsable de la conformité.
 
 ## Article 15 — Mémoire et données sensibles
 
-Le Client peut consulter, corriger et supprimer les informations conservées dans sa mémoire personnelle au moyen de [interface].
+Le Client peut consulter, corriger et supprimer les informations conservées dans sa mémoire personnelle au moyen de « Mon compte → Confidentialité → Mémoire et connexions » (interface pédagogique à implémenter et vérifier).
 
 Les informations déclarées sont distinguées, lorsque cela est pertinent, des déductions de l’IA. Les durées et modalités de conservation sont précisées dans la politique de protection des données.
 
@@ -215,7 +215,7 @@ En cas de violation, la Société documente l’incident et effectue les notific
 
 ## Article 18 — Droits et fin de conservation
 
-Les personnes concernées peuvent exercer leurs droits d’accès, rectification, effacement, limitation, opposition et, lorsque ses conditions sont réunies, portabilité, auprès de [contact] ou du DPO.
+Les personnes concernées peuvent exercer leurs droits d’accès, rectification, effacement, limitation, opposition et, lorsque ses conditions sont réunies, portabilité, auprès de dpo@supermajordome.example (adresse pédagogique) ou du DPO.
 
 La Société répond dans les délais légaux. Une vérification d’identité proportionnée peut être demandée si elle est nécessaire.
 
@@ -237,7 +237,7 @@ Le Client bénéficie de la garantie légale de conformité applicable aux servi
 
 Le Client peut demander la mise en conformité et, dans les conditions légales, obtenir une réduction du prix ou la résolution du contrat, sans frais et sans préjudice de ses autres droits.
 
-[À insérer avant publication : l’encadré réglementaire intégral correspondant à une fourniture continue de service numérique, adapté à la durée proposée. Le présent résumé ne le remplace pas. Cet encadré est requis par l’article D. 211-4 du Code de la consommation.]
+**Insertion réglementaire indispensable avant publication :** l’encadré intégral prévu par l’article D. 211-4 du Code de la consommation doit être intégré selon le modèle réglementaire applicable à la fourniture continue. Il n’est pas complété par des données fictives : le résumé ci-dessus ne le remplace pas.
 
 ## Article 21 — Suspension, responsabilité et contenus
 
@@ -251,11 +251,11 @@ Le Client conserve ses droits sur les contenus transmis. Il accorde seulement le
 
 ## Article 22 — Réclamations et médiation
 
-Les réclamations commerciales sont adressées à [service client]. Les questions relatives aux données personnelles peuvent être adressées directement au DPO.
+Les réclamations commerciales sont adressées à assistance@supermajordome.example (adresse pédagogique). Les questions relatives aux données personnelles peuvent être adressées directement au DPO.
 
 Après une réclamation écrite préalable restée sans solution, le Client peut recourir gratuitement, dans les conditions légales, au médiateur de la consommation suivant :
 
-[Nom du médiateur effectivement désigné, adresse postale et site internet.]
+**Exemple pédagogique uniquement :** « Médiation Majordome Démonstration », 8, voie de la Médiation Numérique, 75002 Paris ; https://mediation.supermajordome.example. Cet organisme, son adresse et son site sont fictifs. Aucun médiateur compétent effectivement conventionné n’est établi par les documents consultés. Ce bloc doit être remplacé par les coordonnées d’un médiateur réellement désigné et référencé avant commercialisation.
 
 Le recours à la médiation n’empêche pas l’exercice des voies de recours ouvertes au Client. La désignation d’un médiateur et la communication de ses coordonnées doivent être effectives avant commercialisation.
 
@@ -269,21 +269,21 @@ Les modifications substantielles des conditions sont communiquées sur un suppor
 
 ## Annexe — Formulaire de rétractation
 
-À l’attention de : [dénomination, adresse postale et adresse électronique]
+À l’attention de : Super Majordome IA, 12, rue du Majordome Numérique, 75002 Paris ; retractation@supermajordome.example (destinataire pédagogique fictif)
 
-Je vous notifie par la présente ma rétractation du contrat portant sur l’abonnement Super Majordome IA souscrit le : [date].
+Je vous notifie par la présente ma rétractation du contrat portant sur l’abonnement Super Majordome IA souscrit le : ________________ (date de souscription à renseigner par le consommateur).
 
-Nom du consommateur : […]  
-Adresse du consommateur : […]  
-Référence de commande : […]  
-Date : […]  
-Signature, uniquement en cas d’envoi papier : […]
+Nom du consommateur : ________________ (à renseigner par le consommateur)  
+Adresse du consommateur : ________________ (à renseigner par le consommateur)  
+Référence de commande : ________________ (à renseigner par le consommateur)  
+Date : ________________ (à renseigner par le consommateur)  
+Signature, uniquement en cas d’envoi papier : ________________ (à renseigner par le consommateur)
 
 ## Note de mise en œuvre — hors texte contractuel
 
 Les cases du parcours de souscription sont distinctes et non précochées :
 
-- Obligatoire : « J’accepte les Conditions générales de vente et d’utilisation, version [X]. »
+- Obligatoire : « J’accepte les Conditions générales de vente et d’utilisation, version projet 1.2. »
 - Facultative : « Je demande expressément que le service commence avant la fin du délai de rétractation de quatorze jours. »
 - Selon les fonctions : consentements spécifiques aux traitements facultatifs ou sensibles, présentés au moment pertinent.
 
@@ -304,3 +304,26 @@ Références consultées lors de la rédaction dans la conversation du 27 octobr
 ## Historique du projet
 
 - **Projet 1.1 — 27 octobre 2026 :** à la demande explicite de l’utilisateur, ajout de l’hypothèse SASU, de Malik Mubashir comme associé unique, du capital envisagé de 100 € et de coordonnées d’immatriculation et de siège explicitement fictives. Source : échanges de cette conversation ; constitution, nomination du président et immatriculation non établies par des pièces du dépôt.
+
+## Provenance des compléments et limites — hors texte contractuel
+
+**Données déclarées par l’utilisateur :** Malik Mubashir est le fondateur unique et investit initialement 100 € (conversation du 27 octobre 2026). L’affectation de cette somme au capital et sa nomination comme président restent à confirmer.
+
+**Données présentes dans les dossiers mais non adoptées :**
+- [[2026%201027%20Business%20Model%20Canvas%20Super%20Majordome%20IA%20V2]] — § « Modèle de revenus proposé » : offres 29 / 79 / 129 € TTC, hypothèses commerciales.
+- [[2026 1027 Registre des hypotheses Finance]] — H01 et H02 : Premium 79 € et TVA de travail 20 %, non validés.
+- [[2026 1027 Contribution marketing au cadrage MVP]] — § 2 « Indispensables et reportées », § 3 « Validations nécessaires avant action » : mémoire, permissions et journal proposés ; voix, Family complète, achats, paiements et données de santé reportés ou exclus du MVP. Cette note est une proposition marketing, pas une preuve de disponibilité.
+- [[REGISTRE DES DECISIONS]] : aucune décision renseignée n’établit l’adoption de ces paramètres dans la version consultée.
+- [[2026 1027 Cadre de financement et tresorerie V1]] — § « Données à obtenir » : statut juridique, TVA et apports versés non établis. Les précisions de la conversation sont conservées comme déclarations, sans transformer cette note Finance en preuve de constitution.
+
+**Écart à arbitrer :** la V2 et les articles 3 et 13 envisagent la voix et Family ; le cadrage MVP recommande leur report. Le présent projet décrit un service cible. Avant chaque vente, l’offre doit détailler exclusivement les fonctions effectivement livrées ; aucune disponibilité n’est attestée par ce document.
+
+**Compléments fictifs pédagogiques :** siège, SIREN/RCS, référence de TVA, téléphone, contacts, URL, parcours d’interface et médiateur. Les adresses en .example ne sont pas opérationnelles ; aucun mandat de médiation, contact opérationnel, hébergement ou fournisseur contracté n’est établi. Le nom du DPO n’a pas été inventé. La référence TVA « FR XX 123456789 » n’est pas un identifiant fiscal valable.
+
+**Champs destinés au consommateur :** les lignes vierges du formulaire de rétractation sont volontairement conservées. Elles ne représentent pas des informations manquantes sur la Société.
+
+**Point légal restant :** l’encadré réglementaire de garantie doit être intégré dans sa version applicable avant publication ; il ne peut être inventé pour les besoins de la simulation. La politique de confidentialité doit aussi être rédigée à partir des flux réels.
+
+**Contrôle documentaire :** lecture des notes Markdown des dossiers Direction, Finance, Ventes, Produit, Opérations et Juridique, du Business Model V2 et du registre des sources. L’archive ZIP Marketing n’a pas été analysée ; l’absence d’information est donc constatée dans les notes consultées, et non garantie pour cette archive.
+
+- **Projet 1.2 — 27 octobre 2026 :** compléments issus des notes consultées ou explicitement pédagogiques, à la demande de l’utilisateur ; conservation des champs de rétractation et signalement des arbitrages MVP.
