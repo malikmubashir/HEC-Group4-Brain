@@ -33,3 +33,18 @@ Couples : communautés de parents cadres, parrainage, RH ciblées. Cadres : Link
 Problème récurrent, budget, décideur, calendrier d'adoption, consentement données, faisabilité technique. Les prestations physiques éventuelles sont réalisées par des tiers : pas de concierge humain interne.
 
 Source : Business Model Canvas V2, 27/10/2026, 0 INBOX. Prix et priorités non validés.
+
+---
+
+## Actualisation V2 — garde-fous des offres et canaux
+**Les accroches précédentes sont des scripts expérimentaux, pas des promesses contractuelles.** Finance demande un test de consentement à payer pour **Personal 29 €, Premium 79 €, Family 129 € TTC** et une mesure des conversions par canal.
+### Ajustements par cible
+- **Couples / Family** : proposer une démonstration de coordination **uniquement si le multi-profil et les permissions ont été validés par Produit**. Sinon tester le problème et mettre le besoin en liste d'attente, sans facturer une fonction indisponible.
+- **Cadres / Premium** : concentrer le pilote sur 1–2 tâches réellement exécutables et mesurables. Tester la valeur vs assistants généralistes, puis le prix à 79 €.
+- **Dirigeants** : privilégier l'introduction qualifiée, un examen de confidentialité et un périmètre d'accès limité ; aucune promesse de sécurité absolue.
+- **Personal** : tester une offre simple à 29 € avec acquisition organique ; ne pas présumer sa rentabilité, faute de coût variable spécifique.
+### Discipline économique
+Hypothèses Finance : CAC **150 €** et churn **3 %** ; Premium : contribution **47,83 € HT/mois**, payback simplifié **3,14 mois**. Un canal ne doit être développé qu'après mesure de son CAC réel, de sa qualité et de la rétention. Le budget MVP **77 050 € HT** ne constitue pas une autorisation de dépenses commerciales.
+### Dépendances
+Marketing : messages et canaux ; Produit : périmètre livrable ; Opérations : coûts/fiabilité par mission ; Juridique : consentements et conditions ; Direction : validation des prix et engagements.
+Sources : BMC V2, « Modèle de revenus proposé » ; `2 FINANCE/PREVISIONS/2026 1027 Acquisition et economie unitaire V1.md`, « Tests demandés » ; `2 FINANCE/PREVISIONS/2026 1027 Demande de cadrage Produit Technique.md`. **Non adopté par le board.**
