@@ -26,3 +26,17 @@ Les tranches individuelles et foyers se recoupent : **ne pas additionner les pop
 Intensité du problème 30 %, disposition à payer 25 %, accessibilité commerciale 20 %, fréquence d'usage 15 %, risque/complexité inversés 10 %. N'attribuer les notes qu'après entretiens.
 
 Source : Business Model Canvas V2, 27/10/2026, 0 INBOX. Segments, seuils et scores sont des propositions.
+
+---
+
+## Actualisation V2 — segmentation et cohérence financière
+**Pas de changement de priorité décidé** : P1 couples bi-actifs aisés et cadres supérieurs ; P2 dirigeants/professions libérales ; P3 actifs confortables. Les seuils de revenus sont **des hypothèses de ciblage**, non des statistiques vérifiées. Les données de revenus individuels et de foyer se chevauchent et ne permettent pas de calculer un marché total.
+### Tests coordonnés avec Finance et Marketing
+- Tester séparément **29 / 79 / 129 € TTC** et la conversion réelle par persona ; aucun prix n'est adopté.
+- Pour chaque segment et canal, enregistrer : coût par lead, taux lead→pilote payant, pilote→abonné, activation J7, rétention J30/J60/J90, coût variable et motifs de résiliation.
+- Hypothèses Finance à challenger : **CAC 150 €**, churn **3 %/mois**. Les calculs de LTV ne constituent pas une preuve de disposition à payer.
+- Éviter de surinvestir en acquisition Family tant que **Produit** n'a pas confirmé les fonctions multi-profils et de coordination familiale.
+### Arbitrages demandés
+Marketing : valider la taille et l'accessibilité des audiences. Finance : valider un CAC et une marge par offre, pas seulement Premium. Produit : confirmer les parcours démontrables. Juridique : valider les données personnelles mobilisables.
+### Sources
+`0 INBOX/2026%201027%20Business%20Model%20Canvas%20Super%20Majordome%20IA%20V2.md`, personas et tarifs ; `2 FINANCE/PREVISIONS/2026 1027 Acquisition et economie unitaire V1.md`, tests demandés ; `2 FINANCE/PREVISIONS/2026 1027 Registre des hypotheses Finance.md`, H01–H05. **Propositions non validées.**
