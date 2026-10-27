@@ -30,3 +30,21 @@ Fondateur responsable du revenu, growth 0,5 ETP, customer success partagé, réf
 Confiance et données, fiabilité des intégrations, concurrence des assistants généralistes, coûts d'inférence et CAC. Réponses : permissions graduées, traçabilité, pilotes payants, limitation du périmètre et arrêt des canaux non rentables.
 
 Source : Business Model Canvas V2, 27/10/2026, dossier 0 INBOX du présent dépôt. Hypothèses non validées.
+
+---
+
+## Actualisation V2 — alignement interdirections (27/10/2026)
+**Statut : proposition commerciale, non décision du board.** Le registre officiel `1 DIRECTION/REGISTRE DES DECISIONS.md` ne contient aucune décision renseignée.
+### Cohérence Finance
+Le scénario Finance propose **150 abonnés fin A1, 800 fin A2, 2 500 fin A3** ; il ne s'agit ni de ventes réalisées ni d'objectifs approuvés. Le budget MVP est estimé à **77 050 € HT**, à auditer et rapprocher des charges fixes. Hypothèses : **CAC 150 €**, churn **3 %/mois**, Premium **79 € TTC**, coût variable **18 € HT/mois**. Contribution Premium : **47,83 € HT/mois** ; payback théorique **3,14 mois** (hors coûts fixes). Le scénario Finance affiche CA HT A1/A2/A3 de **29 625 € / 375 250 € / 1 303 500 €**, chiffres signalés par Finance comme **à recalculer et auditer**. Le jalon commercial de 30 abonnés J90 reste un **test**, non une trajectoire suffisante démontrée vers 150 fin A1.
+### Arbitrages proposés au board
+1. **Finance + Ventes** : valider les cibles annuelles, le budget d'acquisition et les hypothèses de conversion/rétention.
+2. **Marketing + Ventes** : confirmer la priorité couples bi-actifs/cadres et tester 29/79/129 € TTC.
+3. **Produit + Opérations** : confirmer les missions effectivement livrables, les coûts et les limites d'automatisation avant toute promesse.
+4. **Juridique/RH** : valider consentements, conditions d'abonnement, données et moyens humains.
+5. **Direction** : consigner les arbitrages approuvés dans le registre officiel ; cette note n'en tient pas lieu.
+### Sources internes
+- `0 INBOX/2026%201027%20Business%20Model%20Canvas%20Super%20Majordome%20IA%20V2.md`, sections « Modèle de revenus proposé » et « MVP et validation ».
+- `2 FINANCE/PREVISIONS/2026 1027 Business plan Lean V1.md`, sections « Hypothèses », « Budget MVP » et « Résultats simplifiés ».
+- `2 FINANCE/PREVISIONS/2026 1027 Acquisition et economie unitaire V1.md`, sections « Hypothèses centrales » et « Tests demandés ».
+- `2 FINANCE/PREVISIONS/2026 1027 Registre des hypotheses Finance.md`, H01–H08.
