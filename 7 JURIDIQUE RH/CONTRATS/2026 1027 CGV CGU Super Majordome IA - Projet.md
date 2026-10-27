@@ -1,6 +1,6 @@
 # Conditions générales de vente et d’utilisation — Super Majordome IA
 
-**Version :** projet 1.0  
+**Version :** projet 1.1  
 **Date d’export :** 27 octobre 2026  
 **Statut :** production d’assistant à la demande du responsable juridique ; projet non signé, à compléter et valider avant publication. Ce dépôt ne vaut ni adoption des conditions par l’entreprise ni acceptation par des clients.
 
@@ -14,17 +14,25 @@ Les mentions entre crochets, l’encadré légal de garantie et les engagements 
 
 ## Article 1 — Identité du prestataire
 
-Le service « Super Majordome IA » est édité et commercialisé par :
+> **Données fictives — exemple pédagogique, à remplacer avant toute utilisation commerciale.** L’adresse et l’immatriculation ci-dessous sont inventées ; elles ne prouvent pas l’existence d’une société immatriculée.
 
-- Dénomination sociale : [dénomination exacte]
-- Forme juridique et capital social : [à compléter]
-- Siège social : [adresse]
-- Numéro SIREN et immatriculation au RCS : [à compléter]
-- Numéro de TVA intracommunautaire : [à compléter]
-- Adresse électronique : [contact]
-- Téléphone : [numéro]
-- Service client : [coordonnées]
-- Délégué à la protection des données : [adresse électronique et adresse postale]
+Le service « Super Majordome IA » est présenté, pour cette simulation, comme édité et commercialisé par :
+
+- Dénomination sociale proposée : **Super Majordome IA**.
+- Forme juridique envisagée : **société par actions simplifiée unipersonnelle (SASU)**.
+- Associé unique : **Malik Mubashir**, selon la précision de l’utilisateur dans la conversation du 27 octobre 2026.
+- Capital social envisagé : **100 €**, sous réserve que l’investissement initial de 100 € annoncé par l’utilisateur soit effectivement affecté au capital.
+- Siège social fictif : **12, rue du Majordome Numérique, 75002 Paris, France**.
+- Numéro SIREN fictif et non valable : **123 456 789**.
+- Mention d’immatriculation fictive : **RCS Paris 123 456 789**.
+- Représentant légal : **Malik Mubashir, président envisagé**, sous réserve de sa nomination effective.
+- Numéro de TVA intracommunautaire : [à compléter après attribution réelle].
+- Adresse électronique : [contact opérationnel à compléter].
+- Téléphone : [numéro opérationnel à compléter].
+- Service client : [coordonnées opérationnelles à compléter].
+- Délégué à la protection des données : [adresse électronique et adresse postale effectives à compléter].
+
+Le SIREN de simulation comporte neuf chiffres mais sa clé de contrôle est invalide. La mention RCS reprend ce même numéro fictif. Ces éléments ne doivent pas être utilisés sur des contrats clients, factures ou formalités réelles.
 
 Ci-après « la Société ».
 
@@ -292,3 +300,7 @@ Références consultées lors de la rédaction dans la conversation du 27 octobr
 - [Code de la consommation, article L. 224-25-26](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044133275/2026-07-12) : mises à jour autres que celles nécessaires à la conformité.
 - [Service Public — médiation de la consommation](https://entreprendre.service-public.gouv.fr/vosdroits/F33338) : désignation et information du consommateur.
 - [RGPD](https://eur-lex.europa.eu/eli/reg/2016/679/oj/fra) : cadre européen de protection des données.
+
+## Historique du projet
+
+- **Projet 1.1 — 27 octobre 2026 :** à la demande explicite de l’utilisateur, ajout de l’hypothèse SASU, de Malik Mubashir comme associé unique, du capital envisagé de 100 € et de coordonnées d’immatriculation et de siège explicitement fictives. Source : échanges de cette conversation ; constitution, nomination du président et immatriculation non établies par des pièces du dépôt.
