@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helium, dossier Board</title>
+<meta name="description" content="Productions Helium du 27 octobre 2026 : deck, analyses, modèle financier, revue juridique, charte de marque. Liens de lecture et de téléchargement.">
+<link rel="icon" href="Marque/assets/app_icon_256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #201C19; --chalk: #F7F3EC; --glow: #F0916A; --glow-deep: #D9734F;
+  --d3: #E9C46A; --euc: #6B8F7A; --stone: #8A8178; --linen: #E4DDD2; --mist: #EFE9E0;
+  --bg: var(--chalk); --fg: var(--ink); --muted: var(--stone); --card: #FFFDF9; --line: var(--linen);
+  --btn-bg: var(--ink); --btn-fg: var(--chalk); --accent: var(--glow-deep);
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: var(--ink); --fg: var(--chalk); --muted: #B8AFA4; --card: #2A2521; --line: #3A342F;
+    --btn-bg: var(--chalk); --btn-fg: var(--ink); --accent: var(--glow);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: var(--ink); --fg: var(--chalk); --muted: #B8AFA4; --card: #2A2521; --line: #3A342F;
+  --btn-bg: var(--chalk); --btn-fg: var(--ink); --accent: var(--glow);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg); font-family: var(--sans);
+  font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+/* En-tête */
+.top { padding: 40px 0 28px; border-bottom: 1px solid var(--line); }
+.top .row { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end; justify-content: space-between; }
+.wordmark img { height: 64px; width: auto; display: block; }
+.top .date { font-family: var(--serif); font-size: 15px; color: var(--muted); margin: 0; }
+h1 {
+  font-family: var(--serif); font-weight: 600; font-size: clamp(32px, 5vw, 52px); line-height: 1.05;
+  letter-spacing: -0.015em; margin: 28px 0 14px; max-width: 18ch;
+}
+h1 .dot { color: var(--accent); }
+.intro { font-size: 18px; max-width: 62ch; margin: 0 0 22px; }
+.status {
+  display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px;
+  background: var(--card); border: 1px solid var(--line); font-size: 14px; color: var(--muted);
+}
+.status::before { content: ""; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+
+/* Par où commencer */
+.start { padding: 32px 0 8px; }
+.start h2 { font-family: var(--serif); font-weight: 600; font-size: 22px; margin: 0 0 14px; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; list-style: none; padding: 0; margin: 0; }
+.steps li {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.steps .n { font-family: var(--serif); font-size: 30px; line-height: 1; color: var(--accent); font-weight: 600; }
+.steps strong { font-size: 16px; }
+.steps p { margin: 0; color: var(--muted); font-size: 14px; }
+.steps a { margin-top: auto; font-weight: 600; text-decoration: none; color: var(--fg); border-bottom: 2px solid var(--accent); width: fit-content; }
+
+/* Sommaire */
+.toc { display: flex; flex-wrap: wrap; gap: 8px; padding: 22px 0 6px; }
+.toc a {
+  text-decoration: none; font-size: 14px; font-weight: 500; padding: 6px 12px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--fg); background: transparent;
+}
+.toc a:hover { border-color: var(--accent); }
+
+/* Blocs */
+.block { padding: 30px 0 10px; border-top: 1px solid var(--line); margin-top: 20px; }
+.block-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; align-items: flex-start; margin-bottom: 14px; }
+.kicker { font-family: var(--serif); color: var(--accent); margin: 0 0 2px; font-size: 14px; letter-spacing: 0.02em; }
+.block h2 { font-family: var(--serif); font-weight: 600; font-size: 30px; margin: 0 0 6px; letter-spacing: -0.01em; }
+.lead { margin: 0; color: var(--muted); max-width: 60ch; }
+.who { margin: 6px 0 0; font-size: 14px; white-space: nowrap; }
+.who span { color: var(--muted); margin-right: 6px; }
+.items { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.item {
+  display: grid; grid-template-columns: 64px 1fr auto; gap: 16px; align-items: start;
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px;
+}
+.tag {
+  font-family: var(--serif); font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-align: center;
+  padding: 7px 0; border-radius: 8px; background: var(--mist); color: var(--ink);
+}
+:root[data-theme="dark"] .tag { background: #3A342F; color: var(--chalk); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tag { background: #3A342F; color: var(--chalk); } }
+.item h3 { margin: 0 0 4px; font-family: var(--serif); font-weight: 600; font-size: 19px; line-height: 1.25; }
+.item p { margin: 0; font-size: 14.5px; }
+.item .meta { margin-top: 6px; color: var(--muted); font-size: 13px; }
+.actions { display: flex; flex-direction: column; gap: 6px; min-width: 160px; }
+.btn {
+  display: inline-block; text-align: center; text-decoration: none; font-size: 13.5px; font-weight: 600;
+  padding: 8px 12px; border-radius: 9px; border: 1px solid var(--line); color: var(--fg); background: transparent;
+}
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--btn-bg); color: var(--btn-fg); border-color: var(--btn-bg); }
+.btn.primary:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+
+/* Décisions */
+.decisions { padding: 30px 0 10px; border-top: 1px solid var(--line); margin-top: 20px; }
+.decisions h2 { font-family: var(--serif); font-weight: 600; font-size: 30px; margin: 0 0 6px; }
+.decisions ol { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 10px; }
+.decisions li { display: grid; grid-template-columns: 64px 1fr; gap: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
+.dnum { font-family: var(--serif); font-weight: 700; color: var(--accent); font-size: 18px; }
+.decisions strong { font-family: var(--serif); font-size: 17px; font-weight: 600; }
+.decisions p { margin: 4px 0 0; font-size: 14.5px; color: var(--muted); }
+
+/* Pied */
+.foot { margin-top: 36px; padding: 26px 0 48px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.foot p { margin: 0 0 10px; max-width: 78ch; }
+.foot a { color: var(--fg); }
+
+@media (max-width: 760px) {
+  .steps { grid-template-columns: 1fr; }
+  .item { grid-template-columns: 56px 1fr; }
+  .actions { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
+  .actions .btn { flex: 1 1 auto; }
+  .who { white-space: normal; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="row">
+      <picture class="wordmark">
+        <source srcset="Marque/assets/wordmark_chalk.png" media="(prefers-color-scheme: dark)">
+        <img src="Marque/assets/wordmark_ink.png" alt="Helium">
+      </picture>
+      <p class="date">Productions du 27 octobre 2026</p>
+    </div>
+    <h1>Le dossier Board, à un clic de chaque pièce<span class="dot">.</span></h1>
+    <p class="intro">Tout ce qui a été produit pour la décision du Board : le deck, les deux analyses, le modèle financier, la revue juridique et la charte de marque. Chaque pièce se lit sur GitHub ou se télécharge.</p>
+    <p class="status">Propositions. Rien n'est acté tant que ce n'est pas au registre des décisions.</p>
+  </header>
+
+  <section class="start">
+    <h2>Par où commencer</h2>
+    <ol class="steps">
+      <li><span class="n">1</span><strong>Le deck</strong><p>La décision demandée et pourquoi, en 24 diapositives. Vingt minutes.</p><a href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Board/2026%201027%20Helium%20Board%20deck%20V1.pptx">Ouvrir le deck</a></li>
+      <li><span class="n">2</span><strong>Le modèle d'affaires</strong><p>Le raisonnement complet, les options écartées et l'audit des hypothèses. Quarante-cinq minutes.</p><a href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Direction/2026%201027%20Helium%20modele%20d%20affaires%20et%20etude%20de%20cas%20V1.docx">Ouvrir le dossier</a></li>
+      <li><span class="n">3</span><strong>Votre dossier de fonction</strong><p>Marketing, Finance, Juridique, Marque : ce qui vous concerne directement, ci-dessous.</p><a href="#marketing">Aller aux dossiers</a></li>
+    </ol>
+  </section>
+
+  <nav class="toc" aria-label="Sommaire">
+    <a href="#board">Board</a><a href="#direction">Direction</a><a href="#marketing">Marketing</a><a href="#finance">Finance</a><a href="#juridique">Juridique</a><a href="#marque">Marque</a><a href="#outils">Outils</a><a href="#decisions">Décisions attendues</a>
+  </nav>
+
+    <section class="block" id="board">
+      <header class="block-head">
+        <div>
+          <p class="kicker">Board/</p>
+          <h2>Board</h2>
+          <p class="lead">La décision demandée au Board, en 24 diapositives.</p>
+        </div>
+        <p class="who"><span>Pour</span> Les six fondateurs</p>
+      </header>
+      <ul class="items">
+      <li class="item">
+        <div class="tag">PPTX</div>
+        <div class="body">
+          <h3>Helium Board deck V1</h3>
+          <p>Décision demandée, marché, modèle, économie unitaire, scénarios, options, plan à 90 jours, risques, juridique, décisions à inscrire. 24 diapositives.</p>
+          <p class="meta">20 min · 171 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Board/2026%201027%20Helium%20Board%20deck%20V1.pptx">Voir sur GitHub</a>
+<a class="btn" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalikmubashir%2FHEC-Group4-Brain%2Fmain%2FPRODUCTIONS%2520ASSISTANTS%2F2026%25201027%2520Helium%2520Board%2FBoard%2F2026%25201027%2520Helium%2520Board%2520deck%2520V1.pptx">Aperçu en ligne</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Board/2026%201027%20Helium%20Board%20deck%20V1.pptx" download>Télécharger</a>
+        </div>
+      </li>
+      </ul>
+    </section>
+    <section class="block" id="direction">
+      <header class="block-head">
+        <div>
+          <p class="kicker">Direction/</p>
+          <h2>Direction</h2>
+          <p class="lead">Le dossier complet derrière le deck.</p>
+        </div>
+        <p class="who"><span>Pour</span> Malik, puis le Board</p>
+      </header>
+      <ul class="items">
+      <li class="item">
+        <div class="tag">DOCX</div>
+        <div class="body">
+          <h3>Modèle d&#x27;affaires et étude de cas V1</h3>
+          <p>Résumé exécutif ; situation, complication, question, réponse ; canvas V3 ; position de prix ; économie unitaire ; scénarios ; options ; méthodes de succès ; plan à 90 jours ; risques ; KPI ; gouvernance ; mémo de décision ; audit des hypothèses.</p>
+          <p class="meta">45 min · 73 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Direction/2026%201027%20Helium%20modele%20d%20affaires%20et%20etude%20de%20cas%20V1.docx">Voir sur GitHub</a>
+<a class="btn" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalikmubashir%2FHEC-Group4-Brain%2Fmain%2FPRODUCTIONS%2520ASSISTANTS%2F2026%25201027%2520Helium%2520Board%2FDirection%2F2026%25201027%2520Helium%2520modele%2520d%2520affaires%2520et%2520etude%2520de%2520cas%2520V1.docx">Aperçu en ligne</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Direction/2026%201027%20Helium%20modele%20d%20affaires%20et%20etude%20de%20cas%20V1.docx" download>Télécharger</a>
+        </div>
+      </li>
+      </ul>
+    </section>
+    <section class="block" id="marketing">
+      <header class="block-head">
+        <div>
+          <p class="kicker">Marketing/</p>
+          <h2>Marketing</h2>
+          <p class="lead">Le marché, les concurrents, les espaces blancs.</p>
+        </div>
+        <p class="who"><span>Pour</span> Alice, Steve</p>
+      </header>
+      <ul class="items">
+      <li class="item">
+        <div class="tag">DOCX</div>
+        <div class="body">
+          <h3>Analyse de marché et concurrence V1</h3>
+          <p>Demande, dimensionnement, segments, chaîne de valeur, profils concurrents, espaces blancs, war-game, durabilité de l&#x27;avantage, inconnues. 122 références.</p>
+          <p class="meta">40 min · 74 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Marketing/2026%201027%20Helium%20analyse%20de%20marche%20et%20concurrence%20V1.docx">Voir sur GitHub</a>
+<a class="btn" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalikmubashir%2FHEC-Group4-Brain%2Fmain%2FPRODUCTIONS%2520ASSISTANTS%2F2026%25201027%2520Helium%2520Board%2FMarketing%2F2026%25201027%2520Helium%2520analyse%2520de%2520marche%2520et%2520concurrence%2520V1.docx">Aperçu en ligne</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Marketing/2026%201027%20Helium%20analyse%20de%20marche%20et%20concurrence%20V1.docx" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">MD</div>
+        <div class="body">
+          <h3>Références marché et concurrence</h3>
+          <p>Dossier de recherche : chaque chiffre avec son URL, sa date et sa fiabilité.</p>
+          <p class="meta">54 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Marketing/2026%201027%20References%20marche%20et%20concurrence.md">Lire</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Marketing/2026%201027%20References%20marche%20et%20concurrence.md" download>Télécharger</a>
+        </div>
+      </li>
+      </ul>
+    </section>
+    <section class="block" id="finance">
+      <header class="block-head">
+        <div>
+          <p class="kicker">Finance/</p>
+          <h2>Finance</h2>
+          <p class="lead">Le modèle à 36 mois, formules vivantes.</p>
+        </div>
+        <p class="who"><span>Pour</span> Sébastien</p>
+      </header>
+      <ul class="items">
+      <li class="item">
+        <div class="tag">XLSX</div>
+        <div class="body">
+          <h3>Modèle financier 36 mois V1</h3>
+          <p>Hypothèses par scénario, économie unitaire, trois modèles mensuels, synthèse, tornade (11 sensibilités), KPI, plan de financement. Recalculé sans erreur. Les cellules de choc C4 à H4 pilotent chaque scénario.</p>
+          <p class="meta">Classeur · 510 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Finance/Helium_Modele_financier_36m_V1.xlsx">Voir sur GitHub</a>
+<a class="btn" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalikmubashir%2FHEC-Group4-Brain%2Fmain%2FPRODUCTIONS%2520ASSISTANTS%2F2026%25201027%2520Helium%2520Board%2FFinance%2FHelium_Modele_financier_36m_V1.xlsx">Aperçu en ligne</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Finance/Helium_Modele_financier_36m_V1.xlsx" download>Télécharger</a>
+        </div>
+      </li>
+      </ul>
+    </section>
+    <section class="block" id="juridique">
+      <header class="block-head">
+        <div>
+          <p class="kicker">Juridique/</p>
+          <h2>Juridique</h2>
+          <p class="lead">La revue des cinq projets, puis les versions corrigées. Rien ne remplace les projets 1.x sans sa décision.</p>
+        </div>
+        <p class="who"><span>Pour</span> Tiffany</p>
+      </header>
+      <ul class="items">
+      <li class="item">
+        <div class="tag">DOCX</div>
+        <div class="body">
+          <h3>Revue juridique des cinq projets</h3>
+          <p>Constats par document, gravité, corrections, bases légales vérifiées, documents manquants, plan d&#x27;action.</p>
+          <p class="meta">30 min · 72 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Revue%20juridique%20des%20cinq%20projets.docx">Voir sur GitHub</a>
+<a class="btn" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalikmubashir%2FHEC-Group4-Brain%2Fmain%2FPRODUCTIONS%2520ASSISTANTS%2F2026%25201027%2520Helium%2520Board%2FJuridique%2F2026%25201027%2520Revue%2520juridique%2520des%2520cinq%2520projets.docx">Aperçu en ligne</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Revue%20juridique%20des%20cinq%20projets.docx" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">MD</div>
+        <div class="body">
+          <h3>Statuts SAS Helium, projet V2</h3>
+          <p>SAS à six associés au lieu de la SASU. Journal des modifications en fin de document.</p>
+          <p class="meta">19 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Statuts%20SAS%20Helium%20-%20Projet%20V2.md">Lire</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Statuts%20SAS%20Helium%20-%20Projet%20V2.md" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">MD</div>
+        <div class="body">
+          <h3>CGV et CGU Helium, projet V2</h3>
+          <p>Rétractation en ligne, résiliation en trois clics, décret 2023-417, LCEN art. 1-1.</p>
+          <p class="meta">38 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20CGV%20CGU%20Helium%20-%20Projet%20V2.md">Lire</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20CGV%20CGU%20Helium%20-%20Projet%20V2.md" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">MD</div>
+        <div class="body">
+          <h3>Politique de confidentialité, projet V2</h3>
+          <p>Bases légales par traitement, sous-traitants, transferts, droits, durées.</p>
+          <p class="meta">14 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Politique%20de%20confidentialite%20Helium%20-%20Projet%20V2.md">Lire</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Politique%20de%20confidentialite%20Helium%20-%20Projet%20V2.md" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">MD</div>
+        <div class="body">
+          <h3>Politique interne de protection des données, projet V2</h3>
+          <p>Registre, habilitations, violations, sous-traitance, formation.</p>
+          <p class="meta">9 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Politique%20interne%20de%20protection%20des%20donnees%20Helium%20-%20Projet%20V2.md">Lire</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Politique%20interne%20de%20protection%20des%20donnees%20Helium%20-%20Projet%20V2.md" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">MD</div>
+        <div class="body">
+          <h3>Charte d&#x27;exécution des agents IA, projet V2</h3>
+          <p>Validation humaine de l&#x27;action finale, journalisation, limites par mission, règlement IA.</p>
+          <p class="meta">8 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Charte%20execution%20des%20agents%20IA%20Helium%20-%20Projet%20V2.md">Lire</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20Charte%20execution%20des%20agents%20IA%20Helium%20-%20Projet%20V2.md" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">MD</div>
+        <div class="body">
+          <h3>Références juridiques vérifiées</h3>
+          <p>Textes consultés, citations, points non confirmés. À relire sur Légifrance avant toute signature.</p>
+          <p class="meta">59 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20References%20juridiques%20verifiees.md">Lire</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Juridique/2026%201027%20References%20juridiques%20verifiees.md" download>Télécharger</a>
+        </div>
+      </li>
+      </ul>
+    </section>
+    <section class="block" id="marque">
+      <header class="block-head">
+        <div>
+          <p class="kicker">Marque/</p>
+          <h2>Marque</h2>
+          <p class="lead">Une identité propre : le point levé, une palette sans bleu ni violet.</p>
+        </div>
+        <p class="who"><span>Pour</span> Alice</p>
+      </header>
+      <ul class="items">
+      <li class="item">
+        <div class="tag">DOCX</div>
+        <div class="body">
+          <h3>Charte de marque V1</h3>
+          <p>Nom, plateforme, voix, logo, palette, typographie, applications.</p>
+          <p class="meta">25 min · 131 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Marque/2026%201027%20Helium%20charte%20de%20marque%20V1.docx">Voir sur GitHub</a>
+<a class="btn" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalikmubashir%2FHEC-Group4-Brain%2Fmain%2FPRODUCTIONS%2520ASSISTANTS%2F2026%25201027%2520Helium%2520Board%2FMarque%2F2026%25201027%2520Helium%2520charte%2520de%2520marque%2520V1.docx">Aperçu en ligne</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Marque/2026%201027%20Helium%20charte%20de%20marque%20V1.docx" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">DOSSIER</div>
+        <div class="body">
+          <h3>Fichiers du logo (dossier)</h3>
+          <p>Wordmark en PNG et SVG, icône d&#x27;application, versions sur fond chalk et sur fond ink.</p>
+          
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/tree/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Marque/assets">Ouvrir le dossier</a>
+        </div>
+      </li>
+      </ul>
+    </section>
+    <section class="block" id="outils">
+      <header class="block-head">
+        <div>
+          <p class="kicker">Outils/</p>
+          <h2>Outils</h2>
+          <p class="lead">Les scripts qui produisent le modèle, le logo et cette page.</p>
+        </div>
+        <p class="who"><span>Pour</span> Qui veut régénérer</p>
+      </header>
+      <ul class="items">
+      <li class="item">
+        <div class="tag">PY</div>
+        <div class="body">
+          <h3>build_model.py</h3>
+          <p>Reconstruit le classeur Finance à partir de la liste ASSUMPTIONS (Python 3, openpyxl).</p>
+          <p class="meta">54 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/build_model.py">Voir sur GitHub</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/build_model.py" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">PY</div>
+        <div class="body">
+          <h3>make_logo.py</h3>
+          <p>Régénère les fichiers du logo (Pillow).</p>
+          <p class="meta">4 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/make_logo.py">Voir sur GitHub</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/make_logo.py" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">PY</div>
+        <div class="body">
+          <h3>helium_brand.py</h3>
+          <p>Palette et polices, importées par les autres scripts.</p>
+          <p class="meta">2 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/helium_brand.py">Voir sur GitHub</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/helium_brand.py" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">PY</div>
+        <div class="body">
+          <h3>make_index.py</h3>
+          <p>Régénère cette page.</p>
+          <p class="meta">22 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/make_index.py">Voir sur GitHub</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/make_index.py" download>Télécharger</a>
+        </div>
+      </li>
+      <li class="item">
+        <div class="tag">MD</div>
+        <div class="body">
+          <h3>LISEZ-MOI des outils</h3>
+          <p>Mode d&#x27;emploi des scripts.</p>
+          <p class="meta">1 Ko</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/LISEZ-MOI.md">Lire</a>
+<a class="btn" href="https://raw.githubusercontent.com/malikmubashir/HEC-Group4-Brain/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/Outils/LISEZ-MOI.md" download>Télécharger</a>
+        </div>
+      </li>
+      </ul>
+    </section>
+
+  <section class="decisions" id="decisions">
+    <h2>Cinq décisions attendues, dans cet ordre</h2>
+    <p class="lead">À inscrire au <a href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/1%20DIRECTION/REGISTRE%20DES%20DECISIONS.md">registre des décisions</a> avec la date, la pièce et qui a décidé.</p>
+    <ol>
+        <li><span class="dnum">D-01</span><div><strong>Nature du projet, fondateurs, propriété intellectuelle</strong><p>Projet pédagogique ou entreprise ; qui continue ; à qui appartient ce qui est produit. Les statuts actuels font du CEO l&#x27;associé unique d&#x27;une SASU pendant que six personnes construisent.</p></div></li>
+        <li><span class="dnum">D-02</span><div><strong>Le nom Helium</strong><p>Recherche d&#x27;antériorité INPI et EUIPO avant tout usage public. Helium Network, Helium 10 et Helium Health existent.</p></div></li>
+        <li><span class="dnum">D-03</span><div><strong>Cible et seuils du pilote</strong><p>Cadres urbains, abonnement à 79 € ; seuils de prix accepté et de coût par mission qui déclenchent le go.</p></div></li>
+        <li><span class="dnum">D-04</span><div><strong>Porte d&#x27;évidence</strong><p>90 jours, 15 k€ au plus, du 3 novembre 2026 au 1er février 2027. Pas un lancement.</p></div></li>
+        <li><span class="dnum">D-05</span><div><strong>Go ou stop au jour 90</strong><p>Sur les mesures du pilote, pas sur les hypothèses du modèle.</p></div></li>
+    </ol>
+  </section>
+
+  <footer class="foot">
+    <p>Ces productions restent dans <code>PRODUCTIONS ASSISTANTS/</code> conformément à <a href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/RULES.md">RULES.md</a>. Elles n'entrent dans un dossier de fonction que par décision du responsable de la fonction.</p>
+    <p>Les boutons « Aperçu en ligne » et « Télécharger » passent par l'adresse publique du dépôt : ils cesseront de fonctionner le jour où le dépôt redeviendra privé. Les liens « Voir sur GitHub » continueront pour les membres connectés.</p>
+    <p><a href="https://github.com/malikmubashir/HEC-Group4-Brain/archive/refs/heads/main.zip">Télécharger le dépôt entier (zip)</a> · <a href="https://github.com/malikmubashir/HEC-Group4-Brain/tree/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board">Le dossier sur GitHub</a> · <a href="https://github.com/malikmubashir/HEC-Group4-Brain/blob/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board/LISEZ-MOI.md">LISEZ-MOI</a> · <a href="https://github.com/malikmubashir/HEC-Group4-Brain/commits/main/PRODUCTIONS%20ASSISTANTS/2026%201027%20Helium%20Board">Historique des modifications</a></p>
+    <p>Page générée le 28/10/2026 par <code>Outils/make_index.py</code>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
