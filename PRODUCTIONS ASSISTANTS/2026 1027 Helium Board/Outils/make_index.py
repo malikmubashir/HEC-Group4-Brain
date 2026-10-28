@@ -80,6 +80,28 @@ SECTIONS = [
                  time="Classeur"),
         ]),
     dict(
+        folder="Technique", title="Technique", who="Sébastien, Malik, Steve, Isaac",
+        lead="La réponse à la demande de cadrage Finance : architecture, coût par mission, plan et budget MVP.",
+        items=[
+            dict(path="Technique/2026 1028 Reponse au cadrage Produit Technique V1.docx",
+                 name="Réponse au cadrage Produit et Technique V1",
+                 desc="Arbitrages recommandés, périmètre MVP, architecture Lean avec alternatives, politique de validation, "
+                      "coût par mission, plan de développement, risques, tableau commun, hypothèses H09 à H18.",
+                 time="40 min"),
+            dict(path="Technique/Helium_Cout_par_mission_V1.xlsx",
+                 name="Coût par mission et plan de charge V1",
+                 desc="Tarifs sourcés, paramètres par mission, synthèse par offre contre H03, sensibilité, protections, "
+                      "plan de charge et budget MVP Lean et Confort, tableau commun. Formules vivantes.",
+                 time="Classeur"),
+            dict(path="Technique/2026 1028 References prix et benchmarks.md",
+                 name="Références prix, benchmarks et taux",
+                 desc="Les trois dossiers de recherche du 27 et 28 octobre : prix des API de modèles et résidence UE, "
+                      "infrastructure et services, benchmarks d'agents et taux journaliers. URL et date pour chaque chiffre."),
+            dict(path="Technique/architecture.png",
+                 name="Schéma d'architecture",
+                 desc="Le schéma du § 3 de la réponse, en PNG."),
+        ]),
+    dict(
         folder="Juridique", title="Juridique", who="Tiffany",
         lead="La revue des cinq projets, puis les versions corrigées. Rien ne remplace les projets 1.x sans sa décision.",
         items=[
@@ -128,6 +150,8 @@ SECTIONS = [
                  desc="Régénère les fichiers du logo (Pillow)."),
             dict(path="Outils/helium_brand.py", name="helium_brand.py",
                  desc="Palette et polices, importées par les autres scripts."),
+            dict(path="Outils/build_missions.py", name="build_missions.py et missions_data.py",
+                 desc="Reconstruisent le classeur Technique à partir des tarifs et des paramètres par mission."),
             dict(path="Outils/make_index.py", name="make_index.py",
                  desc="Régénère cette page."),
             dict(path="Outils/LISEZ-MOI.md", name="LISEZ-MOI des outils",
@@ -374,10 +398,10 @@ h1 .dot {{ color: var(--accent); }}
         <source srcset="Marque/assets/wordmark_chalk.png" media="(prefers-color-scheme: dark)">
         <img src="Marque/assets/wordmark_ink.png" alt="Helium">
       </picture>
-      <p class="date">Productions du 27 octobre 2026</p>
+      <p class="date">Productions des 27 et 28 octobre 2026</p>
     </div>
     <h1>Le dossier Board, à un clic de chaque pièce<span class="dot">.</span></h1>
-    <p class="intro">Tout ce qui a été produit pour la décision du Board : le deck, les deux analyses, le modèle financier, la revue juridique et la charte de marque. Chaque pièce se lit sur GitHub ou se télécharge.</p>
+    <p class="intro">Tout ce qui a été produit pour la décision du Board : le deck, les deux analyses, le modèle financier, la revue juridique, la charte de marque, et la réponse technique au cadrage Finance. Chaque pièce se lit sur GitHub ou se télécharge.</p>
     <p class="status">Propositions. Rien n'est acté tant que ce n'est pas au registre des décisions.</p>
   </header>
 
@@ -391,7 +415,7 @@ h1 .dot {{ color: var(--accent); }}
   </section>
 
   <nav class="toc" aria-label="Sommaire">
-    <a href="#board">Board</a><a href="#direction">Direction</a><a href="#marketing">Marketing</a><a href="#finance">Finance</a><a href="#juridique">Juridique</a><a href="#marque">Marque</a><a href="#outils">Outils</a><a href="#decisions">Décisions attendues</a>
+    <a href="#board">Board</a><a href="#direction">Direction</a><a href="#marketing">Marketing</a><a href="#finance">Finance</a><a href="#technique">Technique</a><a href="#juridique">Juridique</a><a href="#marque">Marque</a><a href="#outils">Outils</a><a href="#decisions">Décisions attendues</a>
   </nav>
 {"".join(sections)}
 

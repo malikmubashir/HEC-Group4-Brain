@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+  body { margin: 0; background: #F7F3EC; }
+  svg { font-family: "Inter", "Carlito", "DejaVu Sans", sans-serif; }
+  .t { font-size: 21px; font-weight: 600; fill: #201C19; }
+  .b { font-size: 16.5px; fill: #201C19; }
+  .bl { font-size: 17px; fill: #F7F3EC; }
+  .tl { font-size: 21px; font-weight: 600; fill: #F7F3EC; }
+  .lab { font-size: 16px; fill: #8A8178; font-style: italic; }
+  .band { font-size: 18px; font-weight: 600; fill: #8A8178; letter-spacing: 0.04em; }
+  .box { fill: #FFFDF9; stroke: #8A8178; stroke-width: 1.5; }
+  .cell { fill: #E4DDD2; stroke: #8A8178; stroke-width: 1.2; }
+  .arrow { stroke: #8A8178; stroke-width: 2; fill: none; marker-end: url(#m); }
+  .arrow2 { stroke: #8A8178; stroke-width: 2; fill: none; marker-end: url(#m); marker-start: url(#ms); }
+  .dot { stroke: #8A8178; stroke-width: 1.8; fill: none; stroke-dasharray: 6 5; marker-end: url(#m); }
+</style></head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1260" viewBox="0 0 1400 1260">
+  <defs>
+    <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8A8178"/>
+    </marker>
+    <marker id="ms" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M10,0 L0,5 L10,10 z" fill="#8A8178"/>
+    </marker>
+  </defs>
+
+  <!-- Utilisateur -->
+  <rect x="480" y="24" width="440" height="92" rx="10" fill="#201C19"/>
+  <text x="700" y="60" text-anchor="middle" class="tl">Utilisateur</text>
+  <text x="700" y="90" text-anchor="middle" class="bl">application web (PWA), notifications</text>
+  <path d="M700,116 L700,196" class="arrow2"/>
+  <text x="684" y="150" text-anchor="end" class="lab">demande, briefing</text>
+  <text x="716" y="150" class="lab">validation, journal</text>
+
+  <!-- Application -->
+  <rect x="50" y="200" width="1300" height="640" rx="14" fill="#EFE9E0" stroke="#E4DDD2" stroke-width="2"/>
+  <text x="76" y="236" class="band">APPLICATION HELIUM · hébergée à Paris (Scaleway) · code maison</text>
+
+  <!-- Row 1 -->
+  <rect x="90" y="262" width="370" height="130" rx="10" class="box"/>
+  <text x="275" y="300" text-anchor="middle" class="t">API et écran de validation</text>
+  <text x="275" y="330" text-anchor="middle" class="b">valider, modifier, refuser</text>
+  <text x="275" y="356" text-anchor="middle" class="b">comptes, abonnement, journal consultable</text>
+
+  <rect x="515" y="262" width="370" height="130" rx="10" fill="#F0916A" stroke="#D9734F" stroke-width="1.5"/>
+  <text x="700" y="298" text-anchor="middle" class="t">Moteur de politique</text>
+  <text x="700" y="326" text-anchor="middle" class="b">A automatique · C confirmation · X exclu</text>
+  <text x="700" y="352" text-anchor="middle" class="b">mandat : une action, un périmètre, 24 h</text>
+  <text x="700" y="378" text-anchor="middle" class="b">refus et journal si pas de mandat</text>
+
+  <rect x="940" y="262" width="370" height="130" rx="10" class="box"/>
+  <text x="1125" y="298" text-anchor="middle" class="t">Orchestrateur de missions</text>
+  <text x="1125" y="326" text-anchor="middle" class="b">plan → collecte → proposition</text>
+  <text x="1125" y="352" text-anchor="middle" class="b">→ validation → exécution → confirmation</text>
+  <text x="1125" y="378" text-anchor="middle" class="b">file durable, reprises idempotentes</text>
+
+  <path d="M460,327 L511,327" class="arrow"/>
+  <path d="M885,327 L936,327" class="arrow"/>
+  <text x="910" y="300" text-anchor="middle" class="lab">mandat</text>
+  <!-- proposition à valider : retour vers l'API -->
+  <path d="M1125,392 C1125,470 275,470 275,396" class="arrow"/>
+  <text x="700" y="446" text-anchor="middle" class="lab">proposition à valider</text>
+
+  <!-- Row 2 -->
+  <rect x="90" y="690" width="370" height="100" rx="10" fill="#EFE9E0" stroke="#8A8178" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="275" y="726" text-anchor="middle" class="t">Observabilité</text>
+  <text x="275" y="754" text-anchor="middle" class="b">traces de chaque appel, coûts, erreurs</text>
+  <text x="275" y="778" text-anchor="middle" class="b">Langfuse (UE), Sentry (UE)</text>
+
+  <g>
+    <ellipse cx="700" cy="520" rx="185" ry="18" fill="#E9C46A" stroke="#8A8178" stroke-width="1.5"/>
+    <rect x="515" y="520" width="370" height="150" fill="#E9C46A" stroke="none"/>
+    <line x1="515" y1="520" x2="515" y2="670" stroke="#8A8178" stroke-width="1.5"/>
+    <line x1="885" y1="520" x2="885" y2="670" stroke="#8A8178" stroke-width="1.5"/>
+    <path d="M515,670 A185,18 0 0 0 885,670" fill="#E9C46A" stroke="#8A8178" stroke-width="1.5"/>
+    <text x="700" y="570" text-anchor="middle" class="t">Mémoire et journal</text>
+    <text x="700" y="598" text-anchor="middle" class="b">PostgreSQL + pgvector, chiffré, Paris</text>
+    <text x="700" y="624" text-anchor="middle" class="b">préférences, foyer, résumés (jamais le texte intégral)</text>
+    <text x="700" y="650" text-anchor="middle" class="b">journal en écriture seule</text>
+  </g>
+
+  <rect x="940" y="520" width="370" height="150" rx="10" class="box"/>
+  <text x="1125" y="556" text-anchor="middle" class="t">Passerelle modèles</text>
+  <text x="1125" y="584" text-anchor="middle" class="b">routage petit / moyen / frontière</text>
+  <text x="1125" y="610" text-anchor="middle" class="b">cache de contexte, budget par mission</text>
+  <text x="1125" y="636" text-anchor="middle" class="b">second fournisseur par palier, bascule</text>
+  <text x="1125" y="660" text-anchor="middle" class="b">mesure du coût de chaque appel</text>
+
+  <path d="M1125,392 L1125,516" class="arrow2"/>
+  <path d="M960,392 L820,508" class="arrow2"/>
+  <text x="870" y="470" text-anchor="end" class="lab">lit, écrit</text>
+  <!-- traces vers observabilité -->
+  <path d="M940,640 C800,760 600,740 464,740" class="dot"/>
+  <text x="640" y="790" text-anchor="middle" class="lab">traces</text>
+
+  <!-- Bandeau connecteurs et modèles -->
+  <rect x="50" y="900" width="830" height="336" rx="14" fill="#EFE9E0" stroke="#E4DDD2" stroke-width="2"/>
+  <text x="76" y="936" class="band">CONNECTEURS · loués, chacun sous mandat</text>
+  <rect x="80" y="960" width="385" height="120" rx="8" class="cell"/>
+  <text x="272" y="996" text-anchor="middle" class="t">Google</text>
+  <text x="272" y="1024" text-anchor="middle" class="b">Gmail, Agenda, Drive · OAuth, périmètres restreints</text>
+  <text x="272" y="1050" text-anchor="middle" class="b">vérification Google : chemin critique</text>
+  <rect x="485" y="960" width="375" height="120" rx="8" class="cell"/>
+  <text x="672" y="996" text-anchor="middle" class="t">Recherche et lieux</text>
+  <text x="672" y="1024" text-anchor="middle" class="b">Brave Search, Firecrawl, Google Places</text>
+  <text x="672" y="1050" text-anchor="middle" class="b">lecture seule</text>
+  <rect x="80" y="1096" width="385" height="120" rx="8" class="cell"/>
+  <text x="272" y="1132" text-anchor="middle" class="t">Navigateur piloté</text>
+  <text x="272" y="1160" text-anchor="middle" class="b">sites de réservation sans API (Browserbase)</text>
+  <text x="272" y="1186" text-anchor="middle" class="b">API partenaires d'abord (TheFork, Mozrest)</text>
+  <rect x="485" y="1096" width="375" height="120" rx="8" class="cell"/>
+  <text x="672" y="1132" text-anchor="middle" class="t">Facturation et courriels</text>
+  <text x="672" y="1160" text-anchor="middle" class="b">Stripe (abonnement), Brevo (courriels)</text>
+  <text x="672" y="1186" text-anchor="middle" class="b">Crisp (support)</text>
+
+  <rect x="900" y="900" width="450" height="336" rx="14" fill="#EFE9E0" stroke="#E4DDD2" stroke-width="2"/>
+  <text x="926" y="936" class="band">MODÈLES · API, résidence UE</text>
+  <rect x="930" y="960" width="390" height="80" rx="8" fill="#6B8F7A" stroke="#6B8F7A"/>
+  <text x="1125" y="990" text-anchor="middle" class="tl">Petit · tri, extraction</text>
+  <text x="1125" y="1018" text-anchor="middle" class="bl">Mistral Small 4, point d'accès UE</text>
+  <rect x="930" y="1052" width="390" height="80" rx="8" fill="#6B8F7A" stroke="#6B8F7A"/>
+  <text x="1125" y="1082" text-anchor="middle" class="tl">Moyen · planification, outils</text>
+  <text x="1125" y="1110" text-anchor="middle" class="bl">Claude Sonnet 5.5, Bedrock profil UE</text>
+  <rect x="930" y="1144" width="390" height="80" rx="8" fill="#6B8F7A" stroke="#6B8F7A"/>
+  <text x="1125" y="1174" text-anchor="middle" class="tl">Frontière · escalade, 10 % au plus</text>
+  <text x="1125" y="1202" text-anchor="middle" class="bl">Claude Opus 5.5, Bedrock profil UE</text>
+
+  <!-- liaisons vers le bandeau -->
+  <path d="M465,840 L465,896" class="arrow2"/>
+  <text x="480" y="872" class="lab">outils, sous mandat</text>
+  <path d="M1125,840 L1125,896" class="arrow"/>
+  <text x="1140" y="872" class="lab">appels par palier</text>
+  <path d="M1125,670 L1125,836" class="arrow"/>
+  <path d="M465,790 L465,836" style="stroke:none"/>
+</svg>
+</body></html>
